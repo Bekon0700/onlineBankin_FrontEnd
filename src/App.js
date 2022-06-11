@@ -26,7 +26,8 @@ function App() {
   
   const fetchToken = async () => {
     try{
-      const result = await axios.get('/api/v1/users/checkToken')
+      // const result = await axios.get('/api/v1/users/checkToken')
+      const result = await axios.get('https://murmuring-escarpment-26916.herokuapp.com/api/v1/users/checkToken')
       return result.data
     }catch(err){
       console.log(err.response.data.message)
