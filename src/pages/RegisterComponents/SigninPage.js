@@ -54,6 +54,7 @@ const SigninPage = () => {
         try{
           // const result = await axios.post('api/v1/users/login', values)
           const result = await axios.post('https://murmuring-escarpment-26916.herokuapp.com/api/v1/users/login', values)
+          console.log(result.data)
           const user = result.data.data.user
           const role = user.role
           const loanStatus = user.activeLoan
