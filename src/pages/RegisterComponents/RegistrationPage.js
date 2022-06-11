@@ -70,8 +70,6 @@ const RegistrationPage = () => {
       };
 
       const submitChange = async (e) => {
-        console.log(values)
-
         // const sendingData = await fetch('http://localhost:7000/api/v1/users/signUp', {
         //     method: 'POST',
         //     headers: {
@@ -84,7 +82,6 @@ const RegistrationPage = () => {
         // console.log(result)
 
         const result = await axios.post('https://murmuring-escarpment-26916.herokuapp.com/api/v1/users/signUp', values)
-        console.log(result)
 
         if(result.data.status === 'success'){
           history.push('/login')
