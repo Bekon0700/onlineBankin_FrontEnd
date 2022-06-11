@@ -39,7 +39,6 @@ function App() {
   useEffect(() => {
     try{
       fetchToken().then(x => {
-        console.log(x)
         if(x.token && x.role === 'client'){
           disPatch(logIn({
             role: x.role,
