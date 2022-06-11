@@ -16,7 +16,7 @@ export const EachLink = (props) => {
 
   const submitChange = async (e) => {
     if(props.title === 'Log Out'){
-      await axios.get('/api/v1/users/deleteToken')
+      await axios.get('https://murmuring-escarpment-26916.herokuapp.com//api/v1/users/deleteToken')
       disPatch(logOut())
       history.push('/')
     }

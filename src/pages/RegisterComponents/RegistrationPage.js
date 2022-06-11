@@ -83,7 +83,7 @@ const RegistrationPage = () => {
         // const result = await sendingData.json()
         // console.log(result)
 
-        const result = await axios.post('api/v1/users/signUp', values)
+        const result = await axios.post('https://murmuring-escarpment-26916.herokuapp.com/api/v1/users/signUp', values)
         console.log(result)
 
         if(result.data.status === 'success'){

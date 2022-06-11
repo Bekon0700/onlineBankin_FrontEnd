@@ -9,7 +9,7 @@ const initialState = {
 export const fetchBalance = createAsyncThunk(
     'balanceInfo/fetchBalance',
     async () => {
-        const result = await axios.get('/api/v1/bank/myAccountInfo')
+        const result = await axios.get('https://murmuring-escarpment-26916.herokuapp.com//api/v1/bank/myAccountInfo')
         return {
             name: result.data.clientName,
             balance: result.data.clientInfo.currentBalance,

@@ -48,7 +48,7 @@ const LoanSubmit = () => {
 
     const submitChange = async (e) => {
     try{
-        const result = await axios.post('api/v1/loan/permission', {
+        const result = await axios.post('https://murmuring-escarpment-26916.herokuapp.com/api/v1/loan/permission', {
             phoneNumber: values.phoneNumber,
             loanAmount: values.Amount
         })

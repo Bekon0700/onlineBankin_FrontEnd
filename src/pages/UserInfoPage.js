@@ -7,7 +7,7 @@ const UserInfoPage = () => {
     const [statement, setStatement] = useState([])
 
     async function fetchData(){
-        const result = await axios.get('/api/v1/users/statement')
+        const result = await axios.get('https://murmuring-escarpment-26916.herokuapp.com//api/v1/users/statement')
         return result.data.statement   
     }
 

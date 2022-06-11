@@ -49,7 +49,7 @@ const DepositComponent = () => {
 
       const submitChange = async (e) => {
         try{
-          const result = await axios.post('api/v1/transaction/deposit', {
+          const result = await axios.post('https://murmuring-escarpment-26916.herokuapp.com/api/v1/transaction/deposit', {
                 phoneNumber: values.phoneNumber,
               depositAmount: values.Amount * 1
           })

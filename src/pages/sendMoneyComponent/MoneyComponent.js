@@ -51,7 +51,7 @@ const MoneyComponent = () => {
 
       const submitChange = async (e) => {
         try{
-          const result = await axios.post('api/v1/transaction/sendMoney', {
+          const result = await axios.post('https://murmuring-escarpment-26916.herokuapp.com/api/v1/transaction/sendMoney', {
               phoneNumber: values.phoneNumber,
               sendAmount: values.Amount * 1
           })

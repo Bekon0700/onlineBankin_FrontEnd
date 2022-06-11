@@ -41,7 +41,7 @@ const WithdrawComponent = () => {
 
       const submitChange = async (e) => {
         try{
-          const result = await axios.post('api/v1/transaction/withdraw', {
+          const result = await axios.post('https://murmuring-escarpment-26916.herokuapp.com/api/v1/transaction/withdraw', {
             withdrawAmount: values.Amount * 1
           })
           if(result.data.status === 'success'){

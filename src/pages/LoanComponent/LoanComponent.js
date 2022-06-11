@@ -42,7 +42,7 @@ const LoanComponent = () => {
 
       const submitChange = async (e) => {
         try{
-          const result = await axios.post('api/v1/transaction/loanPayBack', {
+          const result = await axios.post('https://murmuring-escarpment-26916.herokuapp.com/api/v1/transaction/loanPayBack', {
             returnAmount: values.Amount * 1
           })
           console.log(result.data)
